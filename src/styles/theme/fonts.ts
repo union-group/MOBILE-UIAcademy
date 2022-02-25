@@ -4,9 +4,9 @@ export const fonts = {
   bold: 'Roboto_700Bold',
 
   sizes: {
-    small: '8px',
-    medium: '16px',
-    large: '32px',
-    huge: '46px',
+    small: 8,
+    medium: 16,
+    large: 32,
+    huge: 46,
   },
 } as const

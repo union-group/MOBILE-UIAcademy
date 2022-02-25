@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components/native'
 import { RectButton } from 'react-native-gesture-handler'
+import { RFValue } from 'react-native-responsive-fontsize'
 
 import { ButtonProps } from '.'
 
@@ -20,7 +21,7 @@ export const Container = styled(RectButton)<ContainerProps>`
 export const Text = styled.Text`
   ${({ theme }) => css`
     font-family: ${theme.fonts.medium};
-    font-size: ${theme.fonts.sizes.medium};
+    font-size: ${RFValue(theme.fonts.sizes.medium)}px;
     color: ${theme.colors.white};
   `}
 `
