@@ -19,6 +19,11 @@ module.exports = (plop) => {
         path: '../src/screens/{{pascalCase name}}/styles.ts',
         templateFile: 'templates/screen/styles.hbs',
       },
+      {
+        type: 'add',
+        path: '../src/screens/{{pascalCase name}}/{{pascalCase name}}.test.tsx',
+        templateFile: 'templates/screen/test.hbs',
+      },
     ],
   })
 }

@@ -1,0 +1,19 @@
+import React from 'react'
+
+import { theme } from '../../styles/theme'
+
+import { renderWithTheme } from '../../utils/test/helpers'
+
+import { {{pascalCase name}} } from '.'
+
+describe('<{{pascalCase name}} />', () => {
+  it('should render by default', () => {
+    const { getByText } = renderWithTheme(
+      <{{pascalCase name}} title="Loren ipsum dolor" />,
+    )
+
+    const { props: title } = getByText('Loren ipsum dolor')
+
+    expect(title).toBeTruthy()
+  })
+})
