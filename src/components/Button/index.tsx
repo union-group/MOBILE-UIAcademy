@@ -1,9 +1,10 @@
 import React from 'react'
-import { RectButtonProps } from 'react-native-gesture-handler'
+import { TouchableOpacityProps } from 'react-native'
 
 import * as S from './styles'
 
-export interface ButtonProps extends RectButtonProps {
+export interface ButtonProps
+  extends Omit<TouchableOpacityProps, 'title'> {
   children: React.ReactNode
   color?: 'purple' | 'blue'
 }

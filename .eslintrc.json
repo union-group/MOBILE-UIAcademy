@@ -30,7 +30,8 @@
         "trailingComma": "all",
         "semi": false,
         "singleQuote": true,
-        "endOfLine":"auto"
+        "endOfLine":"auto",
+        "printWidth": 70
       }
     ],
     "no-use-before-define": "off",

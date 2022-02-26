@@ -1,3 +1,4 @@
+import { RFValue } from 'react-native-responsive-fontsize'
 import styled, { css } from 'styled-components/native'
 
 export const Container = styled.View`
@@ -18,7 +19,7 @@ export const Text = styled.Text`
   ${({ theme }) => css`
     font-family: ${theme.fonts.bold};
     text-align: center;
-    font-size: ${theme.fonts.sizes.large};
+    font-size: ${RFValue(theme.fonts.sizes.large)}px;
     color: ${theme.colors.white};
     margin-bottom: ${theme.spacings.large};
   `}
