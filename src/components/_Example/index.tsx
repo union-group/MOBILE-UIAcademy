@@ -3,17 +3,17 @@ import { TouchableOpacityProps } from 'react-native'
 
 import * as S from './styles'
 
-export interface ButtonProps
+export interface ExampleProps
   extends Omit<TouchableOpacityProps, 'title'> {
   children: React.ReactNode
-  color?: 'purple' | 'blue'
+  color?: 'primary' | 'secondary'
 }
 
-export const Button = ({
+export const Example = ({
   children,
-  color = 'purple',
+  color = 'primary',
   ...rest
-}: ButtonProps) => {
+}: ExampleProps) => {
   return (
     <S.Container color={color} {...rest}>
       <S.Text>{children}</S.Text>
