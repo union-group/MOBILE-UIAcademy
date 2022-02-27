@@ -2,9 +2,9 @@ import styled, { css } from 'styled-components/native'
 import { TouchableOpacity } from 'react-native'
 import { RFValue } from 'react-native-responsive-fontsize'
 
-import { ButtonProps } from '.'
+import { ExampleProps } from '.'
 
-type ContainerProps = Pick<ButtonProps, 'color'>
+type ContainerProps = Pick<ExampleProps, 'color'>
 
 export const Container = styled(TouchableOpacity)<ContainerProps>`
   ${({ theme, color }) => css`
@@ -14,7 +14,7 @@ export const Container = styled(TouchableOpacity)<ContainerProps>`
     align-items: center;
     justify-content: center;
     background-color: ${theme.colors[color]};
-    margin: ${theme.spacings.medium};
+    margin: ${theme.spacings.medium}px;
   `}
 `
 
