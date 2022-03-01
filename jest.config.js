@@ -3,7 +3,7 @@ module.exports = {
   testPathIgnorePatterns: ['/node_modules', '/android', '/ios'],
   setupFilesAfterEnv: [
     '@testing-library/jest-native/extend-expect',
-    'jest-styled-components',
+    './jest.setup.js',
   ],
   transformIgnorePatterns: ['/node_modules/(?!native-base)/'],
   collectCoverage: true,
