@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InstructorCard /> should match snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F6F6FA",
+        "borderRadius": 18,
+        "flexDirection": "row",
+        "height": 141,
+        "justifyContent": "flex-start",
+        "marginRight": 8,
+        "paddingBottom": 8,
+        "paddingLeft": 8,
+        "paddingRight": 8,
+        "paddingTop": 8,
+        "width": 408,
+      },
+    ]
+  }
+>
+  <Image
+    resizeMode="cover"
+    source={
+      Object {
+        "uri": "photo.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#F6F6FA",
+          "borderRadius": 12,
+          "height": 56,
+          "width": 50,
+        },
+      ]
+    }
+    testID="avatar"
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "marginLeft": 8,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#0B0B0B",
+            "fontFamily": "Epilogue_500Medium",
+            "fontSize": 31,
+            "lineHeight": 39,
+          },
+        ]
+      }
+    >
+      John Doe
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#0B0B0B",
+            "fontFamily": "Epilogue_400Regular",
+            "fontSize": 27,
+            "lineHeight": 31,
+            "marginTop": 4,
+            "opacity": 0.7,
+          },
+        ]
+      }
+    >
+      UI
+    </Text>
+  </View>
+</View>
+`;
