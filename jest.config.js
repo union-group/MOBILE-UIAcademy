@@ -16,6 +16,7 @@ module.exports = {
     '!./src/utils/test/*.tsx',
     '!./src/routes/**',
     '!./src/@types/**',
+    '!./src/components/**/mock.ts',
     '!./App.tsx',
   ],
 }
