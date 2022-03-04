@@ -28,6 +28,7 @@ describe('<Button />', () => {
       color: theme.colors.black,
     })
   })
+
   it('should render with black color', () => {
     const { getByTestId, getByText } = renderWithTheme(
       <Button color="black" testID="button">
