@@ -6,31 +6,27 @@ import { BorderlessButtonProps } from 'react-native-gesture-handler'
 import * as S from './styles'
 
 export interface ButtonIconProps extends BorderlessButtonProps {
-  action: () => void
   iconName: keyof typeof AntDesign.glyphMap
-  title?: string
-  size?: 'xsmall' | 'small' | 'medium'
-  directionIcon?: 'left' | 'right'
-  fillColor?: 'green' | 'white'
+  text?: string
+  size?: 'xsmall' | 'small' | 'medium' | 'large'
+  fillColor?: 'transparent' | 'green' | 'white'
   withBorder?: boolean
   onlyIcon?: boolean
 }
 
 export const ButtonIcon = ({
-  action,
   iconName,
-  title,
-  size = 'small',
-  directionIcon = 'left',
-  fillColor,
+  text,
+  size = 'medium',
+  fillColor = 'transparent',
   withBorder = true,
   onlyIcon = false,
   ...rest
 }: ButtonIconProps) => {
   if (onlyIcon) {
     return (
-      <S.WrapperContainer onPress={action} size={size} {...rest}>
-        <S.Container testID="button-icon" size={size} onlyIcon>
+      <S.WrapperContainer size={size} {...rest}>
+        <S.Container testID="button-icon" onlyIcon>
           <S.Icon testID="icon" name={iconName} size={size} />
         </S.Container>
       </S.WrapperContainer>
@@ -39,40 +35,15 @@ export const ButtonIcon = ({
 
   return (
     <S.WrapperIcon withBorder={withBorder}>
-      <S.WrapperContainer
-        onPress={action}
-        fillColor={fillColor}
-        size={size}
-        {...rest}
-      >
-        {directionIcon === 'left' && (
-          <S.Container
-            testID="button-icon"
-            size={size}
-            title={title}
-            directionIcon={directionIcon}
-          >
-            <S.Icon testID="icon" name={iconName} size={size} />
-          </S.Container>
-        )}
-        {title && (
-          <S.Text
-            testID="text-icon"
-            size={size}
-            directionIcon={directionIcon}
-          >
-            {title}
+      <S.WrapperContainer fillColor={fillColor} size={size} {...rest}>
+        <S.Container testID="button-icon" text={text}>
+          <S.Icon testID="icon" name={iconName} size={size} />
+        </S.Container>
+
+        {!!text && (
+          <S.Text testID="text-icon" size={size}>
+            {text}
           </S.Text>
-        )}
-        {directionIcon === 'right' && (
-          <S.Container
-            testID="button-icon"
-            size={size}
-            title={title}
-            directionIcon={directionIcon}
-          >
-            <S.Icon testID="icon" name={iconName} size={size} />
-          </S.Container>
         )}
       </S.WrapperContainer>
     </S.WrapperIcon>
