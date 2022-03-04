@@ -2,6 +2,8 @@ import {
   BorderlessButton,
   BorderlessButtonProps,
 } from 'react-native-gesture-handler'
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { AntDesign } from '@expo/vector-icons'
 import { RFValue } from 'react-native-responsive-fontsize'
 import styled, { css, DefaultTheme } from 'styled-components/native'
 
@@ -12,6 +14,18 @@ type Props = BorderlessButtonProps & {
   fillColor?: 'green' | 'white'
   withBorder?: boolean
   onlyIcon?: boolean
+}
+
+const iconModifiers = {
+  xsmall: () => css`
+    font-size: ${RFValue(12)}px;
+  `,
+  small: () => css`
+    font-size: ${RFValue(20)}px;
+  `,
+  medium: () => css`
+    font-size: ${RFValue(24)}px;
+  `,
 }
 
 const WrapperContainerModifiers = {
@@ -60,7 +74,7 @@ const TextModifiers = {
 }
 
 export const Container = styled.View<Props>`
-  ${({ theme, size, title, directionIcon, onlyIcon }) => css`
+  ${({ size, title, directionIcon, onlyIcon }) => css`
     align-items: center;
     justify-content: center;
 
@@ -82,6 +96,11 @@ export const Container = styled.View<Props>`
     css`
       padding: 0;
     `};
+  `}
+`
+export const Icon = styled(AntDesign)<Props>`
+  ${({ size }) => css`
+    ${!!size && iconModifiers[size]};
   `}
 `
 
