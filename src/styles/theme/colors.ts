@@ -5,5 +5,7 @@ export const colors = {
   white: '#FFFFFF',
   black: '#0B0B0B',
 
+  neutral: '#E1E1E1',
+
   background: '#F6F6FA',
 } as const
