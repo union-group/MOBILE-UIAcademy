@@ -6,7 +6,7 @@ exports[`<InstructorCard /> should match snapshot 1`] = `
     Array [
       Object {
         "alignItems": "center",
-        "backgroundColor": "#F6F6FA",
+        "backgroundColor": "#FFFFFF",
         "borderRadius": 18,
         "flexDirection": "row",
         "height": 141,
