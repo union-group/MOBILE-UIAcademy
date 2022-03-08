@@ -4,7 +4,7 @@ import { RectButtonProps } from 'react-native-gesture-handler'
 import * as S from './styles'
 
 export interface ButtonProps extends RectButtonProps {
-  children: React.ReactNode
+  children: string
   color?: 'primary' | 'black'
   size?: 'small' | 'medium' | 'large' | 'fullWidth'
 }
