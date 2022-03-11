@@ -6,8 +6,9 @@ import { theme } from '../../styles/theme'
 
 import { renderWithTheme } from '../../utils/test/helpers'
 
-import { ButtonIcon, selectSizeIcon } from '.'
+import { ButtonIcon } from '.'
 import SearchSvg from '../../assets/search.svg'
+import { selectSizeIcon } from '../../utils/selectSizeIcon'
 
 jest.mock('../../assets/search.svg', () => () => (
   <h1 style={{ width: 24, height: 24 }}>Esse é o meu svg</h1>
@@ -86,7 +87,7 @@ describe('<ButtonIcon />', () => {
     )
 
     expect(buttonIcon).toHaveStyle({
-      backgroundColor: 'white',
+      backgroundColor: theme.colors.white,
     })
   })
   it('should be render icon with text in respective size and padding', () => {
@@ -94,7 +95,7 @@ describe('<ButtonIcon />', () => {
       <ButtonIcon svg={SearchSvg} size="xsmall" />,
     )
 
-    expect(selectSizeIcon('xsmall')).toBe(RFValue(8))
+    expect(selectSizeIcon('xsmall')).toBe(RFValue(12))
 
     rerender(
       <ThemeProvider theme={theme}>
@@ -102,7 +103,7 @@ describe('<ButtonIcon />', () => {
       </ThemeProvider>,
     )
 
-    expect(selectSizeIcon('small')).toBe(RFValue(14))
+    expect(selectSizeIcon('small')).toBe(RFValue(16))
 
     rerender(
       <ThemeProvider theme={theme}>

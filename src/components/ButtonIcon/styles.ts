@@ -25,6 +25,9 @@ export const WrapperIcon = styled.View<WrapperIconProps>`
   `}
 `
 const WrapperContainerModifiers = {
+  xsmall: () => css`
+    padding: ${RFValue(4)}px;
+  `,
   small: () => css`
     padding: ${RFValue(10)}px;
   `,
@@ -40,8 +43,8 @@ const WrapperContainerModifiers = {
   green: (theme: DefaultTheme) => css`
     background-color: ${theme.colors.primary};
   `,
-  white: () => css`
-    background-color: white;
+  white: (theme: DefaultTheme) => css`
+    background-color: ${theme.colors.white};
   `,
 }
 

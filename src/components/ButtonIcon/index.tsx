@@ -1,7 +1,7 @@
 import React from 'react'
 import { BorderlessButtonProps } from 'react-native-gesture-handler'
-import { RFValue } from 'react-native-responsive-fontsize'
 import { SvgProps } from 'react-native-svg'
+import { selectSizeIcon } from '../../utils/selectSizeIcon'
 import * as S from './styles'
 
 export interface ButtonIconProps extends BorderlessButtonProps {
@@ -11,23 +11,6 @@ export interface ButtonIconProps extends BorderlessButtonProps {
   fillColor?: 'transparent' | 'green' | 'white'
   withBorder?: boolean
   onlyIcon?: boolean
-}
-
-export const selectSizeIcon = (
-  sizeIcon: 'xsmall' | 'small' | 'medium' | 'large',
-  // eslint-disable-next-line consistent-return
-) => {
-  // eslint-disable-next-line default-case
-  switch (sizeIcon) {
-    case 'xsmall':
-      return RFValue(8)
-    case 'small':
-      return RFValue(14)
-    case 'medium':
-      return RFValue(24)
-    case 'large':
-      return RFValue(30)
-  }
 }
 
 export const ButtonIcon = ({
