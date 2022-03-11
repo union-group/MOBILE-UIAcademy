@@ -1,12 +1,11 @@
 import React from 'react'
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { AntDesign } from '@expo/vector-icons'
-
 import { BorderlessButtonProps } from 'react-native-gesture-handler'
+import { RFValue } from 'react-native-responsive-fontsize'
+import { SvgProps } from 'react-native-svg'
 import * as S from './styles'
 
 export interface ButtonIconProps extends BorderlessButtonProps {
-  iconName: keyof typeof AntDesign.glyphMap
+  svg: React.FC<SvgProps>
   text?: string
   size?: 'xsmall' | 'small' | 'medium' | 'large'
   fillColor?: 'transparent' | 'green' | 'white'
@@ -14,8 +13,25 @@ export interface ButtonIconProps extends BorderlessButtonProps {
   onlyIcon?: boolean
 }
 
+export const selectSizeIcon = (
+  sizeIcon: 'xsmall' | 'small' | 'medium' | 'large',
+  // eslint-disable-next-line consistent-return
+) => {
+  // eslint-disable-next-line default-case
+  switch (sizeIcon) {
+    case 'xsmall':
+      return RFValue(8)
+    case 'small':
+      return RFValue(14)
+    case 'medium':
+      return RFValue(24)
+    case 'large':
+      return RFValue(30)
+  }
+}
+
 export const ButtonIcon = ({
-  iconName,
+  svg: Svg,
   text,
   size = 'medium',
   fillColor = 'transparent',
@@ -27,7 +43,11 @@ export const ButtonIcon = ({
     return (
       <S.WrapperContainer size={size} {...rest}>
         <S.Container testID="button-icon" onlyIcon>
-          <S.Icon testID="icon" name={iconName} size={size} />
+          <Svg
+            testID="icon"
+            width={selectSizeIcon(size)}
+            height={selectSizeIcon(size)}
+          />
         </S.Container>
       </S.WrapperContainer>
     )
@@ -37,7 +57,11 @@ export const ButtonIcon = ({
     <S.WrapperIcon withBorder={withBorder}>
       <S.WrapperContainer fillColor={fillColor} size={size} {...rest}>
         <S.Container testID="button-icon" text={text}>
-          <S.Icon testID="icon" name={iconName} size={size} />
+          <Svg
+            testID="icon"
+            width={selectSizeIcon(size)}
+            height={selectSizeIcon(size)}
+          />
         </S.Container>
 
         {!!text && (
