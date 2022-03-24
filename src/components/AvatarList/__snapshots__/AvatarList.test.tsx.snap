@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AvatarList /> should match snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexDirection": "row",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 25,
+          "height": 108,
+          "justifyContent": "center",
+          "marginLeft": -20,
+          "width": 108,
+        },
+      ]
+    }
+    testID="wrapperAvatar"
+  >
+    <View>
+      <Image
+        source={
+          Object {
+            "uri": "https://res.cloudinary.com/dbnq26wqe/image/upload/v1648093889/others/image_04_nrxubl.jpg",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "borderRadius": 25,
+              "height": 98,
+              "width": 98,
+            },
+          ]
+        }
+        testID="roundImage"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 25,
+          "height": 108,
+          "justifyContent": "center",
+          "marginLeft": -20,
+          "width": 108,
+        },
+      ]
+    }
+    testID="wrapperAvatar"
+  >
+    <View>
+      <Image
+        source={
+          Object {
+            "uri": "https://res.cloudinary.com/dbnq26wqe/image/upload/v1648093889/others/image_03_e3vugv.jpg",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "borderRadius": 25,
+              "height": 98,
+              "width": 98,
+            },
+          ]
+        }
+        testID="roundImage"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 25,
+          "height": 108,
+          "justifyContent": "center",
+          "marginLeft": -20,
+          "width": 108,
+        },
+      ]
+    }
+    testID="wrapperAvatar"
+  >
+    <View>
+      <Image
+        source={
+          Object {
+            "uri": "https://res.cloudinary.com/dbnq26wqe/image/upload/v1648093889/others/image_05_ww4pum.jpg",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "borderRadius": 25,
+              "height": 98,
+              "width": 98,
+            },
+          ]
+        }
+        testID="roundImage"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#0B0B0B",
+          "borderRadius": 25,
+          "height": 108,
+          "justifyContent": "center",
+          "marginLeft": -20,
+          "width": 108,
+        },
+      ]
+    }
+    testID="fillCircle"
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "Epilogue_500Medium",
+            "fontSize": 24,
+          },
+        ]
+      }
+    >
+      +
+      2
+    </Text>
+  </View>
+</View>
+`;
