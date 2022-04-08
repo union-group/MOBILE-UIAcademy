@@ -8,6 +8,7 @@ export interface ButtonIconProps extends BorderlessButtonProps {
   svg: React.FC<SvgProps>
   text?: string
   size?: 'xsmall' | 'small' | 'medium' | 'large'
+  sizeIcon?: 'xsmall' | 'small' | 'medium' | 'large'
   fillColor?: 'transparent' | 'green' | 'white'
   withBorder?: boolean
   onlyIcon?: boolean
@@ -17,6 +18,7 @@ export const ButtonIcon = ({
   svg: Svg,
   text,
   size = 'medium',
+  sizeIcon = 'medium',
   fillColor = 'transparent',
   withBorder = true,
   onlyIcon = false,
@@ -28,8 +30,8 @@ export const ButtonIcon = ({
         <S.Container testID="button-icon" onlyIcon>
           <Svg
             testID="icon"
-            width={selectSizeIcon(size)}
-            height={selectSizeIcon(size)}
+            width={selectSizeIcon(sizeIcon)}
+            height={selectSizeIcon(sizeIcon)}
           />
         </S.Container>
       </S.WrapperContainer>
@@ -42,8 +44,8 @@ export const ButtonIcon = ({
         <S.Container testID="button-icon" text={text}>
           <Svg
             testID="icon"
-            width={selectSizeIcon(size)}
-            height={selectSizeIcon(size)}
+            width={selectSizeIcon(sizeIcon)}
+            height={selectSizeIcon(sizeIcon)}
           />
         </S.Container>
 
