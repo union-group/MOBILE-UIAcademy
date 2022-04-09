@@ -1,5 +1,8 @@
 module.exports = {
   preset: 'jest-expo',
+  moduleNameMapper: {
+    '\\.svg': '<rootDir>/__mocks__/svgMock.js',
+  },
   testPathIgnorePatterns: ['/node_modules', '/android', '/ios'],
   setupFilesAfterEnv: [
     '@testing-library/jest-native/extend-expect',
