@@ -89,7 +89,7 @@ describe('<Button />', () => {
 
     expect(button).toHaveStyle({
       width: '100%',
-      height: RFValue(54),
+      height: RFValue(65),
     })
   })
 })

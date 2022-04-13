@@ -22,7 +22,7 @@ const containerModifiers = {
   `,
   fullWidth: () => css`
     width: 100%;
-    height: ${RFValue(54)}px;
+    height: ${RFValue(65)}px;
   `,
   primary: (theme: DefaultTheme) => css`
     background-color: ${theme.colors.primary};
