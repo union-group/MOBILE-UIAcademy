@@ -14,9 +14,9 @@ import { theme } from './src/styles/theme'
 
 import { Routes } from './src/routes'
 
-export default function App() {
-  const test = ''
+import { AppProvider } from './src/hooks'
 
+export default function App() {
   const [fontsLoaded] = useFonts({
     Epilogue_400Regular,
     Epilogue_500Medium,
@@ -29,8 +29,10 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <StatusBar style="dark" />
-      <Routes />
+      <AppProvider>
+        <StatusBar style="dark" />
+        <Routes />
+      </AppProvider>
     </ThemeProvider>
   )
 }
