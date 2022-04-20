@@ -2,6 +2,7 @@
 import { StatusBar } from 'expo-status-bar'
 import React, { useRef, useState } from 'react'
 import { Animated, FlatList } from 'react-native'
+
 import { OnboardingItem } from './OnboardingItem'
 import { slides } from './slides'
 import { Paginator } from './Paginator'

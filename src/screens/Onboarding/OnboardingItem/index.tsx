@@ -1,14 +1,17 @@
 import React from 'react'
 import { useWindowDimensions } from 'react-native'
-import { ButtonIcon } from '../../../components/ButtonIcon'
-import * as S from './styles'
 
-import { Button } from '../../../components/Button'
-import { Logo } from '../../../components/Logo'
+import { ButtonIcon } from '../../../components/Buttons/ButtonIcon'
+import { Button } from '../../../components/Buttons/Button'
+import { Logo } from '../../../components/Brand/Logo'
+
 import { SlideProps } from '../slides'
-import { theme } from '../../../styles/theme'
 
 import RightSideSvg from '../../../assets/right_side_icon.svg'
+
+import { theme } from '../../../styles/theme'
+
+import * as S from './styles'
 
 export interface OnboardingItemProps {
   item: SlideProps

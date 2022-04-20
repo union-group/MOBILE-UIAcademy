@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unstable-nested-components */
 import React from 'react'
 
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs'

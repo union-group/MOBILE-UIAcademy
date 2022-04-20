@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 /* eslint-disable react/jsx-no-constructed-context-values */
 import React, {
   createContext,
