@@ -1,12 +1,14 @@
 export const fonts = {
-  regular: 'Roboto_400Regular',
-  medium: 'Roboto_500Medium',
-  bold: 'Roboto_700Bold',
+  regular: 'Epilogue_400Regular',
+  medium: 'Epilogue_500Medium',
+  bold: 'Epilogue_600SemiBold',
 
   sizes: {
-    small: '8px',
-    medium: '16px',
-    large: '32px',
-    huge: '46px',
+    xsmall: 12,
+    small: 14,
+    medium: 16,
+    large: 18,
+    xlarge: 24,
+    huge: 30,
   },
 } as const

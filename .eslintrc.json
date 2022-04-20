@@ -30,7 +30,8 @@
         "trailingComma": "all",
         "semi": false,
         "singleQuote": true,
-        "endOfLine":"auto"
+        "endOfLine":"auto",
+        "printWidth": 70
       }
     ],
     "no-use-before-define": "off",
@@ -46,6 +47,8 @@
     "react/jsx-no-bind": 0,
     "camelcase": 0,
     "@typescript-eslint/no-empty-interface": 0,
-    "react/require-default-props": 0
+    "react/require-default-props": 0,
+    "import/no-extraneous-dependencies": 0,
+    "consistent-return": 0
   }
 }

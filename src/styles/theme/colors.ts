@@ -1,8 +1,13 @@
 export const colors = {
-  purple: '#851d86',
-  blue: '#0048fe',
+  primary: '#C2E7D6',
+  primaryDark: '#82D9B1',
 
-  white: '#FFF',
+  secondary: '#F6F6FA',
 
-  background: '#171717',
+  white: '#FFFFFF',
+  black: '#0B0B0B',
+
+  neutral: '#E1E1E1',
+
+  background: '#F6F6FA',
 } as const
