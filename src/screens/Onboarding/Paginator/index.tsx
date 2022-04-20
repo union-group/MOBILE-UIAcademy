@@ -1,5 +1,6 @@
 import React from 'react'
 import { Animated, useWindowDimensions } from 'react-native'
+
 import { SlideProps } from '../slides'
 
 import * as S from './styles'

@@ -5,9 +5,10 @@ import { FlatList } from 'react-native'
 
 import { renderWithTheme } from '../../utils/test/helpers'
 
-import { Onboarding } from '.'
 import { OnboardingItem } from './OnboardingItem'
 import { slides } from './slides'
+
+import { Onboarding } from '.'
 
 describe('<Onboarding />', () => {
   it('should render by default', () => {

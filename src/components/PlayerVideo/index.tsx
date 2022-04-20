@@ -3,7 +3,7 @@ import { TouchableWithoutFeedback } from 'react-native-gesture-handler'
 
 import { useVideo } from '../../hooks/useVideo'
 
-import { ButtonIcon } from '../ButtonIcon'
+import { ButtonIcon } from '../Buttons/ButtonIcon'
 import { VideoControls } from './VideoControls'
 
 import ArrowIcon from '../../assets/arrow-left.svg'

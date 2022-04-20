@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ButtonSocial /> should match snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderColor": "#E1E1E1",
+        "borderRadius": 10,
+        "borderStyle": "solid",
+        "borderWidth": 1,
+      },
+    ]
+  }
+>
+  <RNGestureHandlerButton
+    activeOpacity={0.105}
+    collapsable={false}
+    onActiveStateChange={[Function]}
+    onGestureEvent={[Function]}
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
+    onHandlerStateChange={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "paddingBottom": 31,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 31,
+        "width": 314,
+      }
+    }
+    testID="buttonSocial"
+    underlayColor="black"
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "black",
+          "borderBottomLeftRadius": undefined,
+          "borderBottomRightRadius": undefined,
+          "borderRadius": undefined,
+          "borderTopLeftRadius": undefined,
+          "borderTopRightRadius": undefined,
+          "bottom": 0,
+          "left": 0,
+          "opacity": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    />
+    <SvgMock
+      height={39}
+      width={39}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#0B0B0B",
+            "fontFamily": "Epilogue_500Medium",
+            "fontSize": 31,
+            "marginLeft": 16,
+          },
+        ]
+      }
+      testID="title-button"
+    >
+      Google
+    </Text>
+  </RNGestureHandlerButton>
+</View>
+`;

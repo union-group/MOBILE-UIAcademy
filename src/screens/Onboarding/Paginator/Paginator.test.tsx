@@ -4,8 +4,9 @@ import { Animated } from 'react-native'
 
 import { renderWithTheme } from '../../../utils/test/helpers'
 
-import { Paginator } from '.'
 import { slides } from '../slides'
+
+import { Paginator } from '.'
 
 describe('<Paginator />', () => {
   it('should render by default', () => {

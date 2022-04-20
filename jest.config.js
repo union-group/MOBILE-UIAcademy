@@ -20,7 +20,7 @@ module.exports = {
     '!./src/routes/**',
     '!./src/@types/**',
     '!./src/components/**/mock.ts',
-    '!./src/components/Loading/**',
+    '!./src/components/Indicator/Loading/**',
     '!./src/components/PlayerVideo/helpers/**',
     '!./src/hooks/index.tsx',
     '!./App.tsx',
