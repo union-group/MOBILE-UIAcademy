@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React, { useState } from 'react'
 import { TextInputProps } from 'react-native'
 import { Feather } from '@expo/vector-icons'
