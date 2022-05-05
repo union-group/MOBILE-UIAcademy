@@ -3,6 +3,11 @@
     "name": "boilerplate-react-native",
     "slug": "boilerplate-react-native",
     "version": "1.0.0",
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#0B0B0B"
+    },
+    "icon": "./assets/iconUiAcademy.png",
     "assetBundlePatterns": [
       "**/*"
     ],
