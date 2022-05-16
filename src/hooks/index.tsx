@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react'
+import { AuthProvider } from './useAuth'
 
 import { VideoProvider } from './useVideo'
 
@@ -7,5 +8,9 @@ interface AppProviderProps {
 }
 
 export const AppProvider = ({ children }: AppProviderProps) => {
-  return <VideoProvider>{children}</VideoProvider>
+  return (
+    <AuthProvider>
+      <VideoProvider>{children}</VideoProvider>
+    </AuthProvider>
+  )
 }
