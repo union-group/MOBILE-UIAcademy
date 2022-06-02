@@ -31,7 +31,7 @@ exports[`<InstructorCard /> should match snapshot 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "#F6F6FA",
+          "backgroundColor": "#19191B",
           "borderRadius": 12,
           "height": 56,
           "width": 50,
