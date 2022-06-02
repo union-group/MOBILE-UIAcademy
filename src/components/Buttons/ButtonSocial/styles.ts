@@ -23,7 +23,7 @@ export const Text = styled.Text`
   ${({ theme }) => css`
     font-family: ${theme.fonts.medium};
     font-size: ${RFValue(theme.fonts.sizes.medium)}px;
-    color: ${theme.colors.black};
+    color: ${theme.colors.white};
     margin-left: ${RFValue(theme.spacings.small)}px;
   `}
 `
