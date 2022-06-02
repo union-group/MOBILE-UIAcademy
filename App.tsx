@@ -30,7 +30,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <AppProvider>
-        <StatusBar style="dark" />
+        <StatusBar style="light" />
         <Routes />
       </AppProvider>
     </ThemeProvider>

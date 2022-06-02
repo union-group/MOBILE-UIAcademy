@@ -62,7 +62,7 @@ exports[`<ButtonSocial /> should match snapshot 1`] = `
       style={
         Array [
           Object {
-            "color": "#0B0B0B",
+            "color": "#FFFFFF",
             "fontFamily": "Epilogue_500Medium",
             "fontSize": 31,
             "marginLeft": 16,
